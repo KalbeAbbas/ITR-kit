@@ -750,9 +750,10 @@ namespace ITR
     //%block="CW01 sleep" 
     export function sleepCW01()
     {
+        serial.writeString("AT+TEST=0" + cw01_vars.NEWLINE)
+        basic.pause(500)
         serial.writeString("AT+SLEEP=1" + cw01_vars.NEWLINE)
         basic.pause(1000)
-        basic.showNumber(2)
     }
 
     //%blockId="wakeUpCW01"
@@ -768,7 +769,9 @@ namespace ITR
             basic.pause(500)
         }while(!rcv.includes("OK"))
 
-        basic.showNumber(3)
+        serial.writeString("AT+TEST=1" + cw01_vars.NEWLINE)
+        basic.pause(500)
+
     }
 
     /**
@@ -1482,18 +1485,21 @@ namespace ITR
 
 
     //%shim=sg35::pm1
+    //%block="SG35 PM1"
     export function pm1(): number {
         return 1
     }
 
 
     //%shim=sg35::pm25
+    //%block="SG35 PM25"
     export function pm25(): number {
         return 1
     }
 
 
     //%shim=sg35::pm10
+    //%block="SG35 PM10"
     export function pm10(): number {
         return 1
     }
