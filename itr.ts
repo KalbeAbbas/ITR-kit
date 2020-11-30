@@ -761,6 +761,7 @@ namespace ITR
     export function wakeUpCW01()
     {
         let rcv: string =""
+        serial.readString()
 
         do
         {
