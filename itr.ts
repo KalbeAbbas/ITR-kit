@@ -271,8 +271,8 @@ namespace ITR
     serial.redirect(SerialPin.P1, SerialPin.P0, 115200)
     serial.setRxBufferSize(200)
     basic.pause(2000)
-    serial.writeString("ATE0" + cw01_vars.NEWLINE)
-    basic.pause(300)
+    /*serial.writeString("ATE0" + cw01_vars.NEWLINE)
+    basic.pause(300)*/
     serial.readString()
     serial.writeString("AT+CWMODE_DEF=3" + cw01_vars.NEWLINE)
     basic.pause(300)
