@@ -284,7 +284,7 @@ namespace ITR
     serial.writeString("AT+CWHOSTNAME?" + cw01_vars.NEWLINE);
     basic.pause(1000)
 
-    read_and_set_name();
+    //read_and_set_name();
 
     // CW01 function call end
 
