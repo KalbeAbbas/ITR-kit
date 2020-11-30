@@ -1,2 +1,2 @@
 ## pxt-in-the-air-microbit2
-![MakeCode](https://github.com/xinabox/pxt-in-the-air-microbit2/workflows/MakeCode/badge.svg)
+![MakeCode](https://github.com/kalbeabbas/ITR-kit/workflows/MakeCode/badge.svg)
