@@ -1525,8 +1525,12 @@ namespace ITR
 	export function runUntil(time: number)
 	{
 		turnOnSG35();
+
+        basic.pause(100)
 		
 		readUntil(time);
+
+        basic.pause(100)
 		
 		turnOffSG35();
 	}
