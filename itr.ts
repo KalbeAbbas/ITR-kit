@@ -227,7 +227,7 @@ namespace ITR
 	
     // Delay for CW01 to wakeup
 
-    turnOffSG35()
+    //turnOffSG35()
     basic.showIcon(IconNames.Chessboard)
     basic.pause(25 * 1000)
 
